@@ -15,13 +15,12 @@ Simulating direct current resistivity, frequency domain electromagnetics and tim
 Lindsey J Heagy, Douglas W Oldenburg, Direct current resistivity with steel-cased wells, Geophysical Journal International, Volume 219, Issue 1, October 2019, Pages 1–26, https://doi.org/10.1093/gji/ggz281
 
 ```
-@article{heagy_impacts_2019,
+@article{heagy_modeling_2019,
 	title = {Modeling electromagnetics on cylindrical meshes with applications to steel-cased wells},
 	volume = {125},
 	issn = {0098-3004},
 	url = {https://www.sciencedirect.com/science/article/pii/S009830041830390X},
 	doi = {10.1016/j.cageo.2018.11.010},
-	number = {},
 	urldate = {2019-03-07},
 	journal = {Computers & Geosciences},
 	author = {Lindsey J. Heagy and Douglas W. Oldenburg},
