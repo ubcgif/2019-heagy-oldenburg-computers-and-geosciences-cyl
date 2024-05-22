@@ -1,75 +1,32 @@
-# Template repository for papers by the GIF group
+# Modeling electromagnetics on cylindrical meshes with applications to steel-cased wells
 
-Please use this repository as a template for papers
+_Lindsey J. Heagy and Douglas W. Oldenburg_
 
-## Repository name
+[https://doi.org/10.1016/j.cageo.2018.11.010]
 
-The naming convention should follow 
+![3D-cylindrical-stimulation](./paper/thumbnail.png)
 
-```
-year-authors-journal-short-title
-```
+# Summary 
 
-As an example for two authors: 
-```
-2023-heagy-oldenburg-gji-casing-permeability
-```
+Simulating direct current resistivity, frequency domain electromagnetics and time domain electromagnetics in settings where steel cased boreholes are present is of interest across a range of applications including well-logging, monitoring subsurface injections such as hydraulic fracturing or carbon capture and storage. In some surveys, well-casings have been used as “extended electrodes” for near surface environmental or geotechnical applications. Wells are often cased with steel, which has both a high conductivity and a significant magnetic permeability. The large physical property contrasts as well as the large disparity in length-scales, which are introduced when a steel-cased well is in a modeling domain, makes performing an electromagnetic forward simulation challenging. Using this setting as motivation, we present a finite volume approach for modeling electromagnetic problems on cylindrically symmetric and 3D cylindrical meshes which include an azimuthal discretization. The associated software implementation includes modeling capabilities for direct current resistivity, time domain electromagnetics, and frequency domain electromagnetics for models that include variable electrical conductivity and magnetic permeability. Electric and magnetic fields, fluxes, and charges are readily accessible in any simulation so that they can be visualized and interrogated. We demonstrate the value of being able to explore the behavior of electromagnetic fields and fluxes through examples which revisit a number of foundational papers on direct current resistivity and electromagnetics in steel-cased wells. The software implementation is open source and included as a part of the SimPEG software ecosystem for simulation and parameter estimation in geophysics. 
 
-if there are more than 2 authors, you can use `etal` to indicate multiple authors, e.g. 
-```
-2024-heagy-etal-tle-future-of-applied-geophysics
-```
+# Citation
 
-## Contents
-
-The paper should be put in a `paper` folder. You can put the original latex there. The published pdf from the journal should also be included here. 
-
-Please also include a `thumbnail.png`. This should be a high-impact figure from the paper. 
-
-## MyST.md
-
-The key file that you will need to update is the `myst.yml` file which is located in the `paper` folder. You will need to fill out the fields that are currently commented out. 
-
-The project id should follow the pattern `ubcgif-YEAR-AUTHORS-JOURNAL`, e.g. `ubcgif-2023-heagy-oldenburg-gji` or `2024-heagy-etal-tle`
-
-Descriptions of the fields is available here: https://mystmd.org/guide/frontmatter#available-frontmatter-fields
-
-## Previewing the site
-
-You can preview the build using MyST. Please have MyST installed ([instructions](https://mystmd.org/guide/installing)). From the `paper` folder, you can then run 
+Lindsey J Heagy, Douglas W Oldenburg, Direct current resistivity with steel-cased wells, Geophysical Journal International, Volume 219, Issue 1, October 2019, Pages 1–26, https://doi.org/10.1093/gji/ggz281
 
 ```
-myst start
+@article{heagy_impacts_2019,
+	title = {Modeling electromagnetics on cylindrical meshes with applications to steel-cased wells},
+	volume = {125},
+	issn = {0098-3004},
+	url = {https://www.sciencedirect.com/science/article/pii/S009830041830390X},
+	doi = {10.1016/j.cageo.2018.11.010},
+	number = {},
+	urldate = {2019-03-07},
+	journal = {Computers & Geosciences},
+	author = {Lindsey J. Heagy and Douglas W. Oldenburg},
+	month = {03},
+	year = {2019},
+	pages = {115-130},
+}
 ```
-
-and a preview will launch, usually from `http://localhost:3000`
-
-Also, whenever you create a pull-request to the repo, curvenote will build you a preview 🚀. A link will be added to the comment thread that looks something like this 
-
-![image](https://github.com/ubcgif/template-repository-paper/assets/6361812/b7a144c5-8458-474b-98c4-9e5890ac859e)
-
-
-## README 
-Please use the following as a template for the 
-```
-# Template repository for papers
-
-_Authors_
-
-[https://doi.org/XXX](https://doi.org/XXX)
-
-![thumbnail](./paper/thumbnail.png)
-
-## Summary
-
-Summary of the paper here (pulled from abstract/summary of paper) 
-
-## Citation
-
-Please include the formatted citation along with bibtex for the reference
-
-```
-
-## Examples
-- https://github.com/ubcgif/2023-heagy-oldenburg-gji-casing-permeability
-- https://github.com/ubcgif/2024-heagy-etal-tle-future-of-applied-geophysics
