@@ -1,0 +1,28 @@
+\begin{table}
+\centering
+    \small
+    \begin{tabular}[htb]{| p{2cm} | p{2.5cm} | p{3cm} | p{3.75cm} | p{2.25cm} |}
+        \hline
+         & \textbf{Mesh} & \textbf{Timestepping} & \textbf{Compute Resources} & \textbf{Compute Time} \\
+        \hline
+        Commer FE & 8 421 559 tetrahedral elements & 893 time steps \newline 9 factorizations & single core \newline  Intel Xeon X5550 (2.67 GHz) & 63 hours\\
+        \hline
+        Commer FD & 2 182 528 cells & $\Delta t = 3 \times 10^{-10}$ s \newline 120 598 277 time-steps & 512 cores \newline Intel Xeon (2.33 GHz) & 23.2 hours\\
+        \hline
+        UBC OcTree & 5 011 924 cell & 154 time steps \newline  10 factorizations &  single core \newline Intel Xeon X5660 (2.80 GHz) & 57 minutes\\
+        \hline
+        SimPEG & 314 272 cells & 187 time-steps  \newline 7 factorizations & single core \newline Intel Xeon X5660 (2.80GHz) & 14 minutes \\
+        \hline
+    \end{tabular}
+    \caption{
+        Simulation details for the results shown in Figure \ref{fig:commer_results}.
+        Note that the discretizations in the Commer FE and FD codes use one element
+        or one cell across the width of the casing, as does the UBC code.
+        The SimPEG simulation uses 4 cells across the width of the casing.
+        For the time-stepping, each chance in step length requires a matrix factorization.
+        Values for the Commer FE and FD solutions are from \cite{Commer2015, Um2015}.
+    }
+    \label{tab:commer_comparison}
+ \end{table}
+
+
