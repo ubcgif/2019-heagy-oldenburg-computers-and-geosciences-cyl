@@ -1,7 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: ubcgif-2019-heagy-oldenburg-gji
+  id: ubcgif-2019-heagy-oldenburg-computers-geosciences
   title: Modeling electromagnetics on cylindrical meshes with applications to steel-cased wells
   authors:
     - name: Lindsey J. Heagy
