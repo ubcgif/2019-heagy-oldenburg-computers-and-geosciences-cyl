@@ -29,7 +29,7 @@ project:
     accepted: 2018/11/19
     published: 2019/03/07
   keywords:
-    - Finitevolume
+    - Finite volume
     - Partial differential equations
     - Time domain electromagnetics
     - Frequency domain electromagnetics
