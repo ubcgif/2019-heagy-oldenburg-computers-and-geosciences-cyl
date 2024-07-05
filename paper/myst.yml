@@ -1,43 +1,44 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  # id: ubcgif-YEAR-AUTHORS-JOURNAL
-  # title: TITLE OF PAPER
-  # description: SHORT DESCRIPTION HERE
+  id: ubcgif-2019-heagy-oldenburg-computers-geo
+  title: Modeling electromagnetics on cylindrical meshes with applications to steel-cased wells
   authors:
-    # - name: AUTHOR 1
-    #   email: EMAIL
-    #   corresponding: true
-    #   orcid: ORCID
-    #   affiliation:
-    #     id: ubc
-    #     name: Department of Earth, Ocean and Atmospheric Sciences, University of British Columbia, Vancouver, British Columbia
-    # - name: Lindsey J. Heagy
-    #   email: lheagy@eoas.ubc.ca
-    #   corresponding: true
-    #   orcid: 0000-0002-1551-5926
-    #   affiliation: ubc
-  # doi: DOI
-  # arxiv: ARXIV
-  # github: GITHUB-URL
-  # date: YYYY/MM/DD # date of publication
+    - name: Lindsey J. Heagy
+      email: lheagy@eoas.ubc.ca
+      corresponding: true
+      orcid: 0000-0002-1551-5926
+      affiliation:
+        id: ubc
+        name: Department of Earth, Ocean and Atmospheric Sciences, University of British Columbia, Vancouver, British Columbia
+    - name: Doulas W. Oldenburg
+      email: doug@eos.ubc.ca
+      orcid: 0000-0002-4327-2124
+      affiliation: ubc
+  doi: 10.1016/j.cageo.2018.11.010
+  arxiv: 1804.07991
+  github: https://github.com/simpeg-research/heagy-2018-emcyl
+  date: 2019/03/07 # date of publication
   # license: CC-BY-4.0  # uncomment this and the line below if open access
   # open_access: true
   venue:
-    # title: JOURNAL NAME
-    # url: JOURNAL URL
+    title: Computers & Geosciences
+    url: https://www.sciencedirect.com/science/article/abs/pii/S009830041830390X
   history:
-    # received: YYYY/MM/DD
-    # accepted: YYYY/MM/DD
-    # published: YYYY/MM/DD
+    received: 2018/04/19
+    accepted: 2018/11/19
+    published: 2019/03/07
   keywords:
-    # - KEYWORD 1
-    # - KEYWORD 2
-    # - KEYWORD 3
-    # - KEYWORD 4
+    - Finite volume
+    - Partial differential equations
+    - Time domain electromagnetics
+    - Frequency domain electromagnetics
+    - Direct current resistivity
+    - Boreholes
   abbreviations:
-    # CSEM: controlled source electromagnetics
-    # EM: electromagnetics
+    DC: direct current
+    EM: electromagnetic
+    IP: induced polarization
   thumbnail: thumbnail.png
   numbering:
     headings: true
@@ -45,5 +46,5 @@ site:
   template: article-theme
   actions:
     - title: pdf
-      # url: NAME-OF-PDF.pdf
+      url: heagy-oldenburg-2019-casing-modeling.pdf
       static: true
